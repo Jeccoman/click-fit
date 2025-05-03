@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Fit - Fitness For Everyone</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Click<span>Fit</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2 px-4" href="#signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 hero-content">
+                    <h1>Transform Your Body, <br>Transform Your Life</h1>
+                    <p class="mb-4">Join our community and start your fitness journey today. <br>Get expert guidance, personalized workouts, and nutrition plans.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#" class="btn btn-primary me-3 mb-2">Get Started</a>
+                        <a href="#" class="btn btn-outline-light mb-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h2>Our Services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h4>Personal Training</h4>
+                        <p>Get personalized training programs designed specifically for your goals, fitness level, and preferences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h4>Group Classes</h4>
+                        <p>Join our energetic group fitness classes led by certified instructors. From HIIT to yoga, we have something for everyone.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <h4>Nutrition Planning</h4>
+                        <p>Our nutrition experts will help you develop healthy eating habits with customized meal plans to fuel your workouts.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h4>Sports Performance</h4>
+                        <p>Elevate your athletic performance with specialized training programs designed for your sport.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-medkit"></i>
+                        </div>
+                        <h4>Recovery & Wellness</h4>
+                        <p>Rejuvenate your body with our recovery services including massages, stretching, and relaxation techniques.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Fitness App</h4>
+                        <p>Track your progress, schedule sessions, and access workout routines with our comprehensive fitness app.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="fact-box">
+                        <h3 class="mb-3">Today's Fitness Fact</h3>
+                        <div id="dailyFact">Loading today's fitness fact...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h2>Fitness Gallery</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="upload-area" id="uploadArea">
+                        <input type="file" id="fileUpload" multiple accept="image/*" style="display: none;">
+                        <i class="fas fa-cloud-upload-alt upload-icon mb-3"></i>
+                        <h4>Drag & Drop Images Here</h4>
+                        <p>Or click to select files</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="image-preview" id="imagePreview"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <h5>About ClickFit</h5>
+                    <p>ClickFit is dedicated to helping people achieve their fitness goals through personalized training, nutrition guidance, and a supportive community.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#login">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-contact">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 209,Fitness Street, Health City</p>
+                    <p><i class="fas fa-phone-alt me-2"></i> +255 741 401 610</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@clickfit.com</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ClickFit. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart text-primary"></i> for fitness enthusiasts</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" ></script>
+</body>
+</html>
